@@ -1,7 +1,6 @@
 package com.deadwormy.familyLife.init;
 
 import com.deadwormy.familyLife.ModFamilyLife;
-import com.deadwormy.voidmod.VoidMod;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
@@ -10,7 +9,7 @@ import java.util.function.Supplier;
 
 public final class ModItemGroups {
 
-    public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(ModFamilyLife.MODID, () -> new ItemStack(ModItems.VOID_INGOT.get()));
+    public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(ModFamilyLife.MODID, () -> new ItemStack(ModItems.GROUP_ICON.get()));
 
     public static final class ModItemGroup extends ItemGroup {
 
@@ -20,12 +19,6 @@ public final class ModItemGroups {
         public ModItemGroup(@Nonnull final String name, @Nonnull final Supplier<ItemStack> iconSupplier) {
             super(name);
             this.iconSupplier = iconSupplier;
-        }
-
-        @Override
-        @Nonnull
-        public ItemStack createIcon() {
-            return iconSupplier.get();
         }
 
         @Override

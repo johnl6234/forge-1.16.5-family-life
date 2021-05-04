@@ -1,27 +1,14 @@
 package com.deadwormy.familyLife.init;
 
 import com.deadwormy.familyLife.ModFamilyLife;
-import com.deadwormy.voidmod.VoidMod;
-import com.deadwormy.voidmod.entity.animalcarry.CarryEntity;
-import com.deadwormy.voidmod.entity.cerberus.CerberusEntity;
-import com.deadwormy.voidmod.entity.creeperPig.CreeperPigEntity;
-import com.deadwormy.voidmod.entity.giraffe.GiraffeEntity;
-import com.deadwormy.voidmod.entity.hornedPig.HornedPigEntity;
-import com.deadwormy.voidmod.entity.humanoid.HumanoidEntity;
-import com.deadwormy.voidmod.entity.lion.LionEntity;
-import com.deadwormy.voidmod.entity.unicorn.UnicornEntity;
-import com.deadwormy.voidmod.entity.warthog.WarthogEntity;
-import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 
 public class ModEntityTypes {
 
-        public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = new DeferredRegister<>(ForgeRegistries.ENTITIES, ModFamilyLife.MODID);
+        public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITIES, ModFamilyLife.MODID);
         // Entity names
 
         public static final String HUMANOID_NAME = "humanoid";

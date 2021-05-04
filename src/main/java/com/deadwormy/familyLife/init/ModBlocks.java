@@ -7,6 +7,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public final class ModBlocks {
 
-    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, ModFamilyLife.MODID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ModFamilyLife.MODID);
 
 }
