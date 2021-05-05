@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public final class ModItemGroups {
 
-    public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(ModFamilyLife.MODID, () -> new ItemStack(ModItems.GROUP_ICON.get()));
+    public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(ModFamilyLife.MODID, () -> new ItemStack(ModItems.CRYSTAL.get()));
 
     public static final class ModItemGroup extends ItemGroup {
 
@@ -23,7 +23,7 @@ public final class ModItemGroups {
 
         @Override
         public ItemStack makeIcon() {
-            return null;
+            return new ItemStack(ModItems.CRYSTAL.get());
         }
     }
 
